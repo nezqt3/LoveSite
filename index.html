@@ -10,36 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery.maskedinput.js"></script>
-    <script src="/js/main_script.js" defer></script>
-    <script>
-        let first = document.querySelector(".input-first")
-    let second = document.querySelector(".input-second")
-    $(".mask-phone").mask("99.99.9999")
-    
-    let btn = document.getElementById("send")
-    
-    let result = ""
-    
-    btn.addEventListener("click", () => {
-        result += first.value + ","
-        result += second.value
-        readySecondPage(result)
-        result = ""
-    })
-    
-    function readySecondPage(valueInputs) {
-    
-        let text = document.querySelector(".check");
-    
-        if (valueInputs == "30.03.2007,17.08.2005") {
-            text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
-        } else if (valueInputs == "30.03.2007,16.08.2005") {
-            text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
-        } else {
-            text.innerHTML = "хз хуйня" 
-        }
-}
-    </script>
+    <!-- <script src="/js/main_script.js" defer></script> -->
 </head>
 <body>
     <header class="header">
@@ -61,8 +32,37 @@
         </form>
     </section>
     <section class="result">
-        <p>Результат</з>
+        <p>Результат</p>
         <p class="check"></p>
     </section>
 </body>
+<script>
+    let first = document.querySelector(".input-first")
+            let second = document.querySelector(".input-second")
+            $(".mask-phone").mask("99.99.9999")
+            
+            let btn = document.getElementById("send")
+            
+            let result = ""
+            
+            btn.addEventListener("click", () => {
+                result += first.value + ","
+                result += second.value
+                readySecondPage(result)
+                result = ""
+            })
+            
+            function readySecondPage(valueInputs) {
+            
+                let text = document.querySelector(".check");
+            
+                if (valueInputs == "30.03.2007,17.08.2005") {
+                    text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
+                } else if (valueInputs == "30.03.2007,16.08.2005") {
+                    text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
+                } else {
+                    text.innerHTML = "хз хуйня" 
+                }
+            }
+</script>
 </html>
