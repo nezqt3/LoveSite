@@ -1,0 +1,20 @@
+@import './header.css';
+@import "./first.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+:root {
+    --var-main-color: rgb(111,254,252);
+    --var-second-color: rgb(29, 26, 26);
+}
+
+body {
+    font-size: 25px;
+    background-color: var(--var-second-color);
+    color: white;
+}
