@@ -21,7 +21,10 @@ function readySecondPage(valueInputs) {
         text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
     } else if (valueInputs == "30.03.2007,16.08.2005") {
         text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
-    } else {
+    } else if (valueInputs == "02.05.2006,12.08.2007") {
+        text.innerHTML = "ВЫ САМАЯ ЛУЧШАЯ ПАРА!" 
+    }
+    else {
         text.innerHTML = "хз хуйня" 
     }
 }
